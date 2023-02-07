@@ -18,7 +18,7 @@ yend = 1022
 #two loops that go over every coordinate eg([[1300, 770], [1300,771]...[1300, 1022]] [[1301, 770]....])
 
 for x in range(xstart, xend+1):
-    for y in range(ystart, yend):
+    for y in range(ystart, yend+1):
         # adding the x, y coordinate to the skyvecurl URL and storing it in requrl
         requrl = skyvecurl + str(x)+ '/' + str(y) + '.jpg'
         print(requrl)
